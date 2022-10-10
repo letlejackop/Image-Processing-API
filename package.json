@@ -4,7 +4,7 @@
   "description": "udacity 1st project",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "npx tsc && copyfiles -V -u 1 \"src/assets/*/*\" \"./build\"",
     "jasmine": "jasmine",
     "start": "nodemon src/index.ts",
     "test": "npm run build && npm run jasmine"
@@ -16,6 +16,8 @@
     "@types/jasmine": "^4.3.0",
     "@types/node": "^18.8.2",
     "@types/sharp": "^0.31.0",
+    "@types/supertest": "^2.0.12",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.24.0",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
@@ -25,6 +27,7 @@
     "express": "^4.18.1",
     "jasmine": "^4.4.0",
     "jasmine-spec-reporter": "^7.0.0",
-    "sharp": "^0.31.1"
+    "sharp": "^0.31.1",
+    "supertest": "^6.3.0"
   }
 }

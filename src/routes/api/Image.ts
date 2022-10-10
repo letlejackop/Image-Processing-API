@@ -1,10 +1,11 @@
 import express, { Request, Response } from "express";
-import {Image} from "../../middleware/ImageProcces"
+import {resize} from "../../middleware/ImageProcces"
+import {validation} from "../../middleware/validate"
 
 const Router = express.Router();
 
 
-Router.get("/images",Image,(req:Request,res:Response)=>{
+Router.get("/images",[validation,resize],(req:Request,res:Response)=>{
 
 });
 
