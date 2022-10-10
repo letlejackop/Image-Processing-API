@@ -1,3 +1,7 @@
+//https://www.npmjs.com/package/sharp
+//https://github.com/calvinmetcalf/copyfiles
+//https://stackoverflow.com/questions/42654595/how-to-check-if-value-is-nan-in-typescript
+//https://jasmine.github.io/api/2.7/matchers.html
 import sharp from "sharp";
 import { Request,Response,NextFunction } from "express";
 import path from 'path';
