@@ -1,12 +1,9 @@
-import express, { Request, Response } from "express";
-import {resize} from "../../middleware/ImageProcces"
-import {validation} from "../../middleware/validate"
+import express from "express";
+import { resize } from "../../middleware/ImageProcess";
+import { validation } from "../../middleware/validate";
 
 const Router = express.Router();
 
-
-Router.get("/images",[validation,resize],(req:Request,res:Response)=>{
-
-});
+Router.get("/images", [validation, resize]);
 
 export default Router;
